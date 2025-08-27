@@ -1,0 +1,63 @@
+/* Registration CSS */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    color: #edf0f1; /* Set default text color */
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #24252A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+}
+
+.container registrationForm label, input, course {
+	color: #edf0f1;
+}
+
+h2 {
+    color: #edf0f1;
+    text-align: center; /* Center the heading */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Adjust form width */
+    margin: 0 auto; /* Center the form */
+	
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+	color: #edf0f1;
+}
+
+button[type="submit"] {
+    background-color: #0088a9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add hover effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #006680;
+}
