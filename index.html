@@ -1,0 +1,180 @@
+<?php include 'sharing\header.php'; ?>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url('images/UTS.jpg');">
+
+<br>
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<img src="images/slide1.png" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/slide2.png" style="width:100%">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="images/slide3.png" style="width:100%">
+		</div>
+	</div>
+	
+	<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+<section class="featured" style="text-align:center">
+    <div>
+        <br><br>
+        <h2>OUR GOAL</h2>
+        <br>
+        <h1>Preparing graduates for the future</h1>
+    </div>
+    <div class="featuredpic">
+        <img src="images/featured1.png" alt="Featured Image">
+        <div class="text-and-list">
+            <p style="text-align:left">
+                Our students are equipped to innovate, <br>
+                apply knowledge practically, and engage meaningfully <br>
+                in a globalized world.
+            </p>
+			<br><br><br>
+            <ul>
+                <li><a href="#"><h3>Foundation</h3></a></li> <br><br>
+                <li><a href="#"><h3><h3> Undergraduate</h3></a></li> <br><br>
+                <li><a href="#"><h3><h3> Postgraduate</h3></a></li> 
+            </ul>
+        </div>
+     </div>
+	 <div class="horizontal-line"></div> </div> <br>
+	 
+	<div class="gallery-container"> 
+        <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+                <img src="images/gallery1.png" alt="Tuition Fee" width="600" height="400">
+            </a> <br> <br>
+			<h3> TUITION FEE </h3> <br> <br> 
+            <div class="desc">Discover our transparent and competitive tuition fee structure, designed to make quality education accessible.</div> <br>
+			<button class="learn-more">Learn More</button> <br> <br> <br> <br>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img_forest.jpg">
+                <img src="images/gallery2.png" alt="Financial Assistance" width="600" height="400">
+            </a> <br> <br> 
+			<h3> FINANCIAL ASSISTANCE </h3> <br> <br>
+            <div class="desc">UTS is dedicated to helping students achieve their academic goals by offering a range of financial assistance options.</div> <br>
+			<button class="learn-more">Learn More</button> <br> <br> <br> <br>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img_lights.jpg">
+                <img src="images/gallery3.png" alt="Financial Assistance" width="600" height="400">
+            </a> <br> <br>
+			<h3> SCHOLARSHIP </h3> <br> <br>
+            <div class="desc">UTS offers a variety of scholarships to support talented students in pursuing their academic dreams.</div> <br>
+			<button class="learn-more">Learn More</button> <br> <br> <br> <br>
+        </div>
+    </div> 
+</section>
+
+<section class="prefooter">
+    <div class="container">
+		
+		<div class="column">
+			<ul>
+			<li><img class="UTS2" src="images/UTS2.png"></li>
+			</ul>
+		</div>
+        <div class="column">
+			
+			
+            <h3>ACADEMIC</h3>
+            <ul>
+                <li>School of Foundation Studies</li>
+                <li>School of Engineering and Technology</li>
+                <li>School of Business & Management</li>
+                <li>School of Built Environment</li>
+                <li>School of Computing & Creative Media</li>
+            </ul>
+
+            <h3>OFFICE</h3>
+            <ul>
+                <li>Vice Chancellor's Office</li>
+                <li>Deputy Vice Chancellor's Office</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>CENTRE</h3>
+            <ul>
+                <li>Academic Resource Centre (ARC)</li>
+                <li>Centre for Information Technology (CIT)</li>
+                <li>Centre for Quality Assurance (CQA)</li>
+                <li>Centre for Continuing Education and Professional Development (CCEPD)</li>
+                <li>Student Development and Service Centre (SDSC)</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>DEPARTMENT</h3>
+            <ul>
+                <li>Academic and Corporate Registry Department (ACRD)</li>
+                <li>Corporate Affairs and Relations Department (CARD)</li>
+                <li>Human Capital and Administration Department (HCAD)</li>
+                <li>Information Technology Department (ITD)</li>
+                <li>Marketing & Student Recruitment Department (MSRD)</li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3>FIND US ON</h3>
+            
+            <p>No.15, Lorong Uplands, 93350 Kuching, Sarawak, Malaysia.</p>
+            <p>Tel: +6 (082) 365222</p>
+            <p>Fax +6 (082) 365200</p>
+            <p>Email: info@uts.edu.my</p>
+        </div>
+
+        <div class="column">
+            <h3>OUR KUCHING MARKETING OFFICE</h3>
+            <p>Level 20, Ground Floor, Section 61, KTLD,</p>
+            <p>88300, Kuching, Sarawak, Malaysia</p>
+            <p>Tel: +6 (082) 365222</p>
+        </div>
+    </div>
+</section>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
